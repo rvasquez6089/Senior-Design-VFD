@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=NetC6_1 Pin=TP1-1
+Removed Member From Class: ClassName=Power Factor Correction Member=TP1
+Added Member To Class: ClassName=Power Factor Correction Member=Component D11 3.3V

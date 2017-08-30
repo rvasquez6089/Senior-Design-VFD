@@ -1,0 +1,20 @@
+Added Component: Designator=C28(CAP_POLY_HXB_F80)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Ratings"; Value = "35V; 105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "565-4186-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "68µ"; VariantName = "[No Variations]"
+Added Component: Designator=C29(CAP_POLY_HXB_F80)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Ratings"; Value = "35V; 105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "565-4186-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "68µ"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=15V Pin=C28-1
+Added Pin To Net: NetName=GND Pin=C28-2
+Added Pin To Net: NetName=15V Pin=C29-1
+Added Pin To Net: NetName=GND Pin=C29-2
+Added Member To Class: ClassName=Power Factor Correction Member=Component C28 HHXB350ARA680MF80G
+Added Member To Class: ClassName=Power Factor Correction Member=Component C29 HHXB350ARA680MF80G

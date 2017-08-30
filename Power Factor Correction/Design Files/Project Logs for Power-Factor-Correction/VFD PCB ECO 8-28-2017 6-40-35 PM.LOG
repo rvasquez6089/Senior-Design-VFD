@@ -1,0 +1,66 @@
+Change Component Designator: OldDesignator=C2 NewDesignator=C6
+Change Component Designator: OldDesignator=C3 NewDesignator=C2
+Change Component Designator: OldDesignator=C4 NewDesignator=C3
+Change Component Designator: OldDesignator=C5 NewDesignator=C4
+Change Component Designator: OldDesignator=C6 NewDesignator=C5
+Change Component Designator: OldDesignator=L2 NewDesignator=L3
+Added Component: Designator=L2(ETD34 Vertical)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Accessory Type"; Value = "Bobbin (Coil Former), Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Bobbin Manufacturer Part Number"; Value = "B66362X1014T001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Magnetics - Transformer, Inductor Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Clip Manufacturer Part Number"; Value = "B66362A2000X000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://product.tdk.com/info/en/documents/data_sheet/etd_34_17_11.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://product.tdk.com/info/en/documents/data_sheet/etd_34_17_11.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ferrite Manufacturer Part Number"; Value = "B66361G1000X187"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "For Use With/Related Products"; Value = "ETD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "EPCOS (TDK)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "B66362X1014T001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=2.09, 10=1.79, 25=1.3428, 50=1.3056, 100=1.1563, 250=1.08172, 500=1.0071, 1000=0.9325 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "176"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Device Package"; Value = "ETD 34 x 17 x 11"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "495-5466-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Turns"; Value = "27"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "120µH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge"; Value = "12 AWG"; VariantName = "[No Variations]"
+Added Component: Designator=VR1(B722 14MM MOV)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Capacitance @ Frequency"; Value = "940pF @ 1kHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Circuit Protection"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://en.tdk.eu/inf/70/db/var_11/SIOV_Leaded_StandarD.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://en.tdk.eu/inf/70/db/var_11/SIOV_Leaded_StandarD.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Energy"; Value = "65J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "EPCOS (TDK)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "B72214S0251K101"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Maximum AC Volts"; Value = "250VAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Maximum DC Volts"; Value = "320VDC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40°C ~ 105°C (TA)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "Disc 14mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.52, 10=0.438, 25=0.3836, 100=0.3288, 250=0.28496, 500=0.24112, 1000=0.18632, 2500=0.16988, 5000=0.15892 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "4808"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "495-4375-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Varistor Voltage (Max)"; Value = "429V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Varistor Voltage (Min)"; Value = "351V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Varistor Voltage (Typ)"; Value = "390V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC1_1 Pin=L2-1
+Added Pin To Net: NetName=NetC11_1 Pin=L2-2
+Added Pin To Net: NetName=GND Pin=U2-5
+Added Pin To Net: NetName=NetC2_1 Pin=VR1-1
+Added Pin To Net: NetName=NetC2_2 Pin=VR1-2
+Change Net Name : Old Net Name=NetC2_1 New Net Name=NetC6_1
+Change Net Name : Old Net Name=NetC2_2 New Net Name=NetC6_2
+Change Net Name : Old Net Name=NetC3_1 New Net Name=NetC2_1
+Added Pin To Net: NetName=NetF1_1 Pin=F1-1
+Added Net: Name=NetF1_1
+Added Member To Class: ClassName=Power Factor Correction Member=Component L1 120µH
+Added Member To Class: ClassName=Power Factor Correction Member=Component L3 SLR1050B-121KE_
+Added Member To Class: ClassName=Power Factor Correction Member=Component VR1 Varistor

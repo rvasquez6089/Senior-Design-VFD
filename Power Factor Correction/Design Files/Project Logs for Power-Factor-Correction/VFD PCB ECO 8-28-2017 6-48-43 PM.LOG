@@ -1,0 +1,23 @@
+Change Component Comment : Designator=P2 Old Comment=Comment New Comment=*
+Change component parameters: Designator = "P2"; UniqueID = "\GNXLOVJO"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=284507&DocType=Customer+Drawing&DocLang=English"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=284507&DocType=Customer+Drawing&DocLang=English"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "284507-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mating Connector"; Value = "284517-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Free Hanging (In-Line)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "0.150" (3.81mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Plug Wire Entry"; Value = "180°"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Positions Per Level"; Value = "3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SCDType"; Value = "undef"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A98380-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Terminal Block Type"; Value = "Plug, Female Sockets"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "3 position"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "300V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire Gauge"; Value = "14-30 AWG"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC2_1 Pin=P2-1
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Member To Class: ClassName=Power Factor Correction Member=Component P2 *
