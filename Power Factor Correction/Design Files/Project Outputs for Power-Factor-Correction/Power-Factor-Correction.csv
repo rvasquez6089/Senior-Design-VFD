@@ -1,0 +1,60 @@
+Designator,Manufacturer 1,Manufacturer Part Number 1,Quantity,Supplier 1
+"C1, C6",KEMET,R463N410050N1K,2,Digi-Key
+C10,Murata Electronics North America,GRM1885C1H221JA01D,1,Digi-Key
+C11,Murata Electronics North America,GRM31A7U3A121JW31D,1,Digi-Key
+C12,TDK Corporation,C1608C0G1H472J080AA,1,Digi-Key
+C13,Murata Electronics North America,GRM43DR72J104KW01L,1,Digi-Key
+"C14, C15",AVX Corporation,06035A181FAT2A,2,Digi-Key
+"C16, C26, C27",TDK Corporation,C4532X7T2W474M230KA,3,Digi-Key
+"C17, C18",Taiyo Yuden,GMK316B7105KL-T,2,Digi-Key
+"C2, C3, C4, C5",United Chemi-Con,ESMR451VSN121MP25S,4,Digi-Key
+C20,United Chemi-Con,APXG200ARA391MJ80G,1,Digi-Key
+C21,Taiyo Yuden,UMK325BJ106MM-T,1,Digi-Key
+"C22, C23",Kemet,C0805C104K5RACTU,2,Digi-Key
+C24,Murata Electronics North America,GRM188R71H823KA93D,1,Digi-Key
+C25,Murata Electronics North America,GRM188R71H104KA93D,1,Digi-Key
+"C28, C29",United Chemi-Con,HHXB350ARA680MF80G,2,Digi-Key
+C7,Murata Electronics North America,GRM1885C1H330JA01D,1,Digi-Key
+"C8, C9, C19",Murata Electronics North America,GCM188R72A102KA37D,3,Digi-Key
+D1,Diodes Incorporated,GBJ2506-F,1,Digi-Key
+D11,ON Semiconductor,MM3Z3V3ST1G,1,Digi-Key
+D2,Cree/Wolfspeed,C3D06065I,1,Digi-Key
+"D3, D6",Diodes Incorporated,B320A-13-F,2,Digi-Key
+"D4, D7, D10",Fairchild/ON Semiconductor,MBR1020VL,3,Digi-Key
+D5,Fairchild/ON Semiconductor,ES1JAF,1,Digi-Key
+"D8, D9",STMicroelectronics,STPSC606G-TR,2,Digi-Key
+F1,Littelfuse Inc.,03540101ZXGY,1,Digi-Key
+L1,EPCOS (TDK),B66362X1014T001,1,Digi-Key
+L2,EPCOS (TDK),B66366B1018T001,1,Digi-Key
+MOD1,CUI Inc.,VOF-15-15,1,Digi-Key
+P1,TE Connectivity AMP Connectors,796739-3,1,Digi-Key
+P2,TE Connectivity,284507-3,1,Digi-Key
+Q1,Cree/Wolfspeed,C3M0065090D,1,Digi-Key
+Q2,Infineon Technologies,IPP50R380CE,1,Digi-Key
+R1,Vishay/Dale,CRCW0603100KFKEA,1,Digi-Key
+R11,Panasonic Electronic Components,ERJ-3EKF3401V,1,Digi-Key
+"R12, R22",Panasonic Electronic Components,ERJ-3GEYJ2R7V,2,Digi-Key
+R13,Panasonic Electronic Components,ERJ-PA3F1203V,1,Digi-Key
+"R14, R19",Panasonic Electronic Components,ERJ-6ENF6813V,2,Digi-Key
+"R15, R23",Yageo,RC0603FR-075R1L,2,Digi-Key
+R16,Panasonic Electronic Components,ERJ-3EKF1802V,1,Digi-Key
+R18,Panasonic Electronic Components,ERJ-3EKF1204V,1,Digi-Key
+"R2, R3",Panasonic Electronic Components,ERJ-6ENF26R1V,2,Digi-Key
+R20,Panasonic Electronic Components,ERJ-3EKF2203V,1,Digi-Key
+R21,Panasonic Electronic Components,ERJ-3EKF3161V,1,Digi-Key
+R24,Panasonic Electronic Components,ERJ-3EKF1803V,1,Digi-Key
+R25,Panasonic Electronic Components,ERJ-3EKF4422V,1,Digi-Key
+R26,Panasonic Electronic Components,ERJ-3EKF1132V,1,Digi-Key
+"R27, R28",Panasonic Electronic Components,ERJ-6ENF4753V,2,Digi-Key
+R29,Yageo,RC0603FR-0710KL,1,Digi-Key
+R30,Yageo,RC0603FR-072K2L,1,Digi-Key
+"R31, R32",Yageo,RC0603FR-07100RL,2,Digi-Key
+R4,Yageo,RC0603FR-071KL,1,Digi-Key
+"R5, R6, R9, R10",Panasonic Electronic Components,ERJ-6GEYJ394V,4,Digi-Key
+"R7, R17",Panasonic Electronic Components,ERJ-3EKF1004V,2,Digi-Key
+R8,Yageo,RC0603JR-073K3L,1,Digi-Key
+"TP2, TP3, TP4, TP5, TP6, TP7, TP8, TP9, TP10, TP11, TP12, TP13, TP14, TP15, TP16, TP17",TE Connectivity AMP Connectors,RCS-0C,16,Digi-Key
+TR2,Bourns Inc.,3224X-1-104E,1,Digi-Key
+U1,Texas Instruments,UC2855ADW,1,Digi-Key
+U2,Analog Devices Inc.,ADA4666-2ARMZ-R7,1,Digi-Key
+VR1,EPCOS (TDK),B72214S0251K101,1,Digi-Key
