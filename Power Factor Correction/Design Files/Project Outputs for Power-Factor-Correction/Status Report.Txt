@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Output: NC Drill Files
 Type  : NC Drill
 From  : Project [Power-Factor-Correction.PrjPcb]
@@ -10,3 +11,14 @@ Files Generated   : 3
 Documents Printed : 0
 
 Finished Output Generation At 12:24:51 AM On 8/31/2017
+=======
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [Power-Factor-Correction.PrjPcb]
+
+
+Files Generated   : 0
+Documents Printed : 0
+
+Finished Output Generation At 10:09:26 AM On 9/1/2017
+>>>>>>> origin/master

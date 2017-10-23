@@ -10,6 +10,7 @@ D26   RECTANGULAR        74.409      48.819       0.000 FLASH      90.000
 D27   RECTANGULAR        47.244     133.858       0.000 FLASH     180.000
 D34   RECTANGULAR        39.370      52.756       0.000 FLASH      90.000
 D35   RECTANGULAR        39.370      52.756       0.000 FLASH       0.000
+<<<<<<< HEAD
 D37   ROUNDED            23.000      23.000       0.000  LINE       0.000
 D38   ROUNDED            10.000      10.000       0.000  LINE       0.000
 D39   ROUNDED            24.000      24.000       0.000  LINE       0.000
@@ -19,6 +20,17 @@ D42   ROUNDED            60.000      60.000       0.000  LINE       0.000
 D43   ROUNDED           170.000     170.000       0.000  LINE       0.000
 D44   ROUNDED            30.000      30.000       0.000  LINE       0.000
 D45   ROUNDED            40.000      40.000       0.000  LINE       0.000
+=======
+D37   ROUNDED           225.000     225.000       0.000  LINE       0.000
+D38   ROUNDED           200.000     200.000       0.000  LINE       0.000
+D39   ROUNDED            60.000      60.000       0.000  LINE       0.000
+D40   ROUNDED            23.000      23.000       0.000  LINE       0.000
+D41   ROUNDED           170.000     170.000       0.000  LINE       0.000
+D42   ROUNDED            30.000      30.000       0.000  LINE       0.000
+D43   ROUNDED            40.000      40.000       0.000  LINE       0.000
+D44   ROUNDED            24.000      24.000       0.000  LINE       0.000
+D45   ROUNDED            10.000      10.000       0.000  LINE       0.000
+>>>>>>> origin/master
 D46   ROUNDED            70.000      70.000       0.000  LINE       0.000
 D47   ROUNDED            25.000      25.000       0.000  LINE       0.000
 D48   ROUNDED            35.000      35.000       0.000  LINE       0.000
@@ -37,8 +49,13 @@ D60   ROUNDED            78.740      78.740       0.000 FLASH       0.000
 D61   ROUNDED           130.000     130.000       0.000 FLASH       0.000
 D62   ROUNDED           120.000     120.000       0.000 FLASH       0.000
 D63   ROUNDED           110.000      80.000       0.000 FLASH       0.000
+<<<<<<< HEAD
 D64   ROUNDED            35.000      35.000       0.000 FLASH       0.000
 D65   ROUNDED            50.000      50.000       0.000 FLASH       0.000
+=======
+D64   ROUNDED            50.000      50.000       0.000 FLASH       0.000
+D65   ROUNDED            35.000      35.000       0.000 FLASH       0.000
+>>>>>>> origin/master
 D68   ROUNDED             9.842       9.842       0.000  LINE       0.000
 D69   ROUNDED            23.622      23.622       0.000  LINE       0.000
 D70   ROUNDED            19.685      19.685       0.000  LINE       0.000
@@ -78,9 +95,12 @@ D118  ROUNDED            86.740      86.740       0.000 FLASH       0.000
 D119  ROUNDED           138.000     138.000       0.000 FLASH       0.000
 D120  ROUNDED           128.000     128.000       0.000 FLASH       0.000
 D121  ROUNDED           118.000      88.000       0.000 FLASH       0.000
+<<<<<<< HEAD
 D124  ROUNDED             1.968       1.968       0.000  LINE       0.000
 D125  ROUNDED             3.000       3.000       0.000  LINE       0.000
 D126  ROUNDED            39.370      39.370       0.000 FLASH       0.000
 D127  ROUNDED            10.000      10.000       0.000 FLASH       0.000
 D128  ROUNDED            20.000      20.000       0.000 FLASH       0.000
 D129  ROUNDED            25.000      25.000       0.000 FLASH       0.000
+=======
+>>>>>>> origin/master

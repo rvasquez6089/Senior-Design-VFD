@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 Layer Pairs Export File for PCB: C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Power Factor Correction\Design Files\VFD.PcbDoc
+=======
+Layer Pairs Export File for PCB: C:\Users\Ryan\Real Documents\Engineering Projects\Senior-Design-VFD\Power Factor Correction\Design Files\VFD.PcbDoc
+>>>>>>> origin/master
 LayersSetName=Top_Bot_Thru_Holes|DrillFile=vfd.txt|DrillLayers=gtl,gbl
