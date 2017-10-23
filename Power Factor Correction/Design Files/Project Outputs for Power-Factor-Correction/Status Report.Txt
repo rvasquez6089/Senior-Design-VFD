@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Power-Factor-Correction.PrjPcb]
+   Generated File[VFD.TXT]
+   Generated File[VFD.LDP]
+   Generated File[VFD.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 12:24:51 AM On 8/31/2017
