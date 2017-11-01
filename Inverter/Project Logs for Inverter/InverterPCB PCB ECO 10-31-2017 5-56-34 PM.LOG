@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetR17_2 Pin=R17-1
+Removed Member From Class: ClassName=BOOT_S Member=15V
+Added Pin To Net: NetName=15V Pin=R17-1
+Added Member To Class: ClassName=3.3VPWR Member=Component R1 Thick Film

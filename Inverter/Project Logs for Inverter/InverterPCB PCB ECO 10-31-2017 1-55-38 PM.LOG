@@ -1,0 +1,15 @@
+Removed Member From Class: ClassName=OUTPUT[1..3] Member=NetQ1HB1_3
+Removed Member From Class: ClassName=OUTPUT[1..3] Member=NetQ1HB2_3
+Removed Member From Class: ClassName=OUTPUT[1..3] Member=NetQ1HB3_3
+Change Component Footprint: Designator=R9HB1 Old Footprint=RESC2012N_ZERO New Footprint=RESC2012X70N
+Change Component Footprint: Designator=R9HB2 Old Footprint=RESC2012N_ZERO New Footprint=RESC2012X70N
+Change Component Footprint: Designator=R9HB3 Old Footprint=RESC2012N_ZERO New Footprint=RESC2012X70N
+Change Component Footprint: Designator=R11HB1 Old Footprint=RESC2012N_ZERO New Footprint=RESC2012X70N
+Change Component Footprint: Designator=R11HB2 Old Footprint=RESC2012N_ZERO New Footprint=RESC2012X70N
+Change Component Footprint: Designator=R11HB3 Old Footprint=RESC2012N_ZERO New Footprint=RESC2012X70N
+Added Member To Class: ClassName=HB1 Member=Component SNK1HB1 (SNK1) ATS-CPX025025010-137-C2-R0
+Added Member To Class: ClassName=HB2 Member=Component SNK1HB2 (SNK1) ATS-CPX025025010-137-C2-R0
+Added Member To Class: ClassName=HB3 Member=Component SNK1HB3 (SNK1) ATS-CPX025025010-137-C2-R0
+Added Member To Class: ClassName=OUTPUT[1..3] Member=Element[1]: OUTPUT
+Added Member To Class: ClassName=OUTPUT[1..3] Member=Element[2]: OUTPUT
+Added Member To Class: ClassName=OUTPUT[1..3] Member=Element[3]: OUTPUT
