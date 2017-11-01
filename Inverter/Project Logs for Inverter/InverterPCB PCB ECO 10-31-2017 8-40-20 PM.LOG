@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=15V Pin=R17-1
+Removed Pin From Net: NetName=15V Pin=R17-2
+Removed Member From Class: ClassName=Inverter Main Member=R17
