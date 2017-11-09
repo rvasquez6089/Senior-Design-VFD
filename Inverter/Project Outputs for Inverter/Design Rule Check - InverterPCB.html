@@ -1,0 +1,432 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD17\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">11/4/2017</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2:03:29 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:06</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc" class="file"><acronym title="C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc">C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">6</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">6</td></tr>
+</table>
+</td>
+</table><a name="ID4M1UJ3ETZPAWPLYD3EIHKRG2HEPHYXWMS5JPTBDTCWB2SWFU2FAJ"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUIIKPDA4ECHIN4FZZF2N535XRLPUWFIB0HHLFWHJDZUT2HQZ2IMC">Unplated multi-layer pad(s) detected</a></td>
+<td class="column2">6</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">6</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNDTXVWRSHT0JBH2GZQP4VPCMBK0JXQ0L3JHM01ETJSYAWGIPPAWC">Clearance Constraint (Gap=12mil) (InNetClass('350V')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID532V2TGRWOYPHHAGUWFQM5XQ4NQHGHPF1ZCMBGJ0TFVI5LM4D0IP">Clearance Constraint (Gap=12mil) (InNetClass('BOOT_S')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYSYV3MIVSNAWDOSBBCIVVQXVDJ4VEFQIXSEDV1LJION25GFFXX2N">Clearance Constraint (Gap=6mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMGQX1JDQCRFKM0Y4NHHHUWSD0LBZJNNT4DYCP1PGO3JEYRPNWHYH">Clearance Constraint (Gap=5mil) (IsStitchingVia and InNet('350V')),((IsVia and (Not IsStitchingVia)))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFBOBWYFBMZD1LSA4EUYK54NFYBE0PWJ1N4EK2PEVOLP0SCOSSUXF">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZQHJZPKU2VWCNCFK2O40VIX5QDI2AVNGCJ51OYMYWHLILZT1JJ2L">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">6</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJ1B51GHQCF1RNZYX3GMLHDSTABVNZA55BQEJMGINFHCD15OVAHMC">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIDI2Y1H4X4Z2KBXAVQFO4YCC1LNYQC0022B0ZCEYT113FQSN4KPO">Width Constraint (Min=4mil) (Max=1000mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID44MDUYZH1GVGHYDPQ443BFBXN10L5T00W3EPVEJIBNOPQJFZIRB">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXSZGHXAFRO2IP20XWVDUXXVI5CWBKO4L15AQPUDC0CAEINRV0IRO">Minimum Annular Ring (Minimum=6mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAIRXLZKVYVCWJ5ZZJHN1ZVBKYKROFAPEJO0BZVFRLMMQH0LBTO3">Hole Size Constraint (Min=11.811mil) (Max=1000mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCSU4RDWEVY5JOQIOR3DAU5BGAMTZYVZN0AZ5YJOS2PTZK01C5JFP">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFCVQEYBTD4S1L0NO1CX0ZTU4MBNNEUNNGUQSGVIHZL3Z2G3KAD4F">Minimum Solder Mask Sliver (Gap=4mil) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXCXRJ5AN4B0AODHO2U15WRDA5CMCAFEKRAH5YNMHB20TUNOH4F1J">Silk To Solder Mask (Clearance=4mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTRKKJ4ACOQ30IIFL4X03LII50CIZC3B1FSISGEEXO0JSSWUFYIGM">Silk to Silk (Clearance=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5A5ZAWZK1CIUBC22YUB5FNM5WGRKL3DIZDA50KBOVVQKKSPZQGZI">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0ZXBBRGPLQGLLGZOVODLG0HNKC0JJVRLDG3R4TH3Y2LZV4ZEPRBP">Room HB1 (Bounding Region = (4316mil, 817.465mil, 6811mil, 2387.465mil) (Disabled)(InComponentClass('HB1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTSZPG35Q0PKOE1PT1I2WYHGE0LECKZ3M25EZMII3LPYOF0MFGDVL">Room HB2 (Bounding Region = (4253mil, 2116.535mil, 6822mil, 3686.535mil) (Disabled)(InComponentClass('HB2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUETP5WQEK30AG4E3TGCCUCYYSD02ZFXZMWODJFBKDYS5MP1D4E4O">Room B7 (Bounding Region = (2324mil, 2848mil, 3113mil, 3379mil) (Disabled)(InComponentClass('B7'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBPBGA4BGMVWYCE1HYZ4BFX4YPNFHACLYN0K4QTLWW5PF0N0DY0IN">Room B8 (Bounding Region = (2324mil, 3348mil, 3113mil, 3879mil) (Disabled)(InComponentClass('B8'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCOMF0N5D0QGAO4G2XMMVCSUZUBLLQ3GE4FC13DFC5BCBTOALIEEG">Room B3 (Bounding Region = (2937mil, 940mil, 3468mil, 1729mil) (Disabled)(InComponentClass('B3'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBONICHVANKASDS0I0SHTIIBEPJBAIVHN12HODDFQLYE1VEBDX0DK">Room B2 (Bounding Region = (3471.89mil, 938.89mil, 4002.89mil, 1727.89mil) (Disabled)(InComponentClass('B2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2XEPZG3FPPA1BEEOBVZAUCK22O13HYU3Z1APGCP2OBGDCC4B2WXM">Room B1 (Bounding Region = (4007mil, 940mil, 4538mil, 1729mil) (Disabled)(InComponentClass('B1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDITI3RBMDHUJ0EFJSINPSX2RL4NYTY45F1UKYCWOK22JGTBVTHABC">Room B4 (Bounding Region = (2325mil, 1338mil, 3114mil, 1869mil) (Disabled)(InComponentClass('B4'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDY340JZMKPNSBI4VAOEWEFWNXQJUIA4H3E2DHFGDV1ZJFCYKRB4CL">Room B6 (Bounding Region = (2325mil, 2347mil, 3114mil, 2878mil) (Disabled)(InComponentClass('B6'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJ5QWOJ4N1W5AMJG0ED4SZKWBUKO3CK5OHYRUUXFK30QZJYQ2UYOH">Room HB3 (Bounding Region = (4776.488mil, 3424mil, 6817.488mil, 4994mil) (Disabled)(InComponentClass('HB3'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDP1MS3B0KZAX2OAHZQYK3ZRRLIGY0XTOJ0MTSEHDENFYQD5MIXRJD">Room B5 (Bounding Region = (2325mil, 1842mil, 3114mil, 2373mil) (Disabled)(InComponentClass('B5'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMVMOWTTIVBZPDY01M3EEQVYV5JTG1RSZTABLSNOZYBSTNR1MWLP">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">6</td>
+</tr>
+</table><br><a name="IDFCVV1IG5GLVGIHQJJSH1NBA0GH5G51DGS1KAQGNRG0QXFFTPGZ2L"><h2>Warnings</h2></a><a name="IDUIIKPDA4ECHIN4FZZF2N535XRLPUWFIB0HHLFWHJDZUT2HQZ2IMC"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Unplated multi-layer pad(s) detected</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6451.602mil|Location2.X=6576.602mil|Location1.Y=2145.602mil|Location2.Y=2270.602mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6451.602mil|Location2.X=6576.602mil|Location1.Y=2145.602mil|Location2.Y=2270.602mil|Absolute=True">Pad SNK1HB1-1(4314.102mil,1467.102mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5270.5mil|Location2.X=5395.5mil|Location1.Y=964.5mil|Location2.Y=1089.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5270.5mil|Location2.X=5395.5mil|Location1.Y=964.5mil|Location2.Y=1089.5mil|Absolute=True">Pad SNK1HB1-1(3133mil,286mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6462.602mil|Location2.X=6587.602mil|Location1.Y=3444.673mil|Location2.Y=3569.673mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6462.602mil|Location2.X=6587.602mil|Location1.Y=3444.673mil|Location2.Y=3569.673mil|Absolute=True">Pad SNK1HB2-1(4325.102mil,2766.173mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5281.5mil|Location2.X=5406.5mil|Location1.Y=2263.571mil|Location2.Y=2388.571mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5281.5mil|Location2.X=5406.5mil|Location1.Y=2263.571mil|Location2.Y=2388.571mil|Absolute=True">Pad SNK1HB2-1(3144mil,1585.071mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6458.091mil|Location2.X=6583.091mil|Location1.Y=4752.138mil|Location2.Y=4877.138mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6458.091mil|Location2.X=6583.091mil|Location1.Y=4752.138mil|Location2.Y=4877.138mil|Absolute=True">Pad SNK1HB3-1(4320.591mil,4073.638mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.988mil|Location2.X=5401.988mil|Location1.Y=3571.035mil|Location2.Y=3696.035mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.988mil|Location2.X=5401.988mil|Location1.Y=3571.035mil|Location2.Y=3696.035mil|Absolute=True">Pad SNK1HB3-1(3139.488mil,2892.535mil) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDZQHJZPKU2VWCNCFK2O40VIX5QDI2AVNGCJ51OYMYWHLILZT1JJ2L"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5261.988mil|Location2.X=5416.988mil|Location1.Y=3556.035mil|Location2.Y=3711.035mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5261.988mil|Location2.X=5416.988mil|Location1.Y=3556.035mil|Location2.Y=3711.035mil|Absolute=True">Un-Routed Net Constraint: Unplated Pad SNK1HB3-1(3139.488mil,2892.535mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6443.091mil|Location2.X=6598.091mil|Location1.Y=4737.138mil|Location2.Y=4892.138mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6443.091mil|Location2.X=6598.091mil|Location1.Y=4737.138mil|Location2.Y=4892.138mil|Absolute=True">Un-Routed Net Constraint: Unplated Pad SNK1HB3-1(4320.591mil,4073.638mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5266.5mil|Location2.X=5421.5mil|Location1.Y=2248.571mil|Location2.Y=2403.571mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5266.5mil|Location2.X=5421.5mil|Location1.Y=2248.571mil|Location2.Y=2403.571mil|Absolute=True">Un-Routed Net Constraint: Unplated Pad SNK1HB2-1(3144mil,1585.071mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6447.602mil|Location2.X=6602.602mil|Location1.Y=3429.673mil|Location2.Y=3584.673mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6447.602mil|Location2.X=6602.602mil|Location1.Y=3429.673mil|Location2.Y=3584.673mil|Absolute=True">Un-Routed Net Constraint: Unplated Pad SNK1HB2-1(4325.102mil,2766.173mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5255.5mil|Location2.X=5410.5mil|Location1.Y=949.5mil|Location2.Y=1104.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5255.5mil|Location2.X=5410.5mil|Location1.Y=949.5mil|Location2.Y=1104.5mil|Absolute=True">Un-Routed Net Constraint: Unplated Pad SNK1HB1-1(3133mil,286mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6436.602mil|Location2.X=6591.602mil|Location1.Y=2130.602mil|Location2.Y=2285.602mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6436.602mil|Location2.X=6591.602mil|Location1.Y=2130.602mil|Location2.Y=2285.602mil|Absolute=True">Un-Routed Net Constraint: Unplated Pad SNK1HB1-1(4314.102mil,1467.102mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

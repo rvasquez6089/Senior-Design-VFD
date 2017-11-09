@@ -1,0 +1,27 @@
+Change Component Designator: OldDesignator=TP1 NewDesignator=HIN1
+Change Component Designator: OldDesignator=TP2 NewDesignator=LIN1
+Change Component Designator: OldDesignator=TP3 NewDesignator=HIN2
+Change Component Designator: OldDesignator=TP4 NewDesignator=LIN2
+Change Component Designator: OldDesignator=TP5 NewDesignator=HIN3
+Change Component Designator: OldDesignator=TP6 NewDesignator=LIN3
+Added Component: Designator=J?(JST_PH_3_B3B)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "455-1705-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J?(JST_PH_3_B3B)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "455-1705-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J?(JST_PH_3_B3B)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "455-1705-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=UART_1_TX Pin=U5-48
+Added Net: Name=UART_1_TX
+Added Pin To Net: NetName=UART_2_RX Pin=U5-44
+Added Net: Name=UART_2_RX
+Added Pin To Net: NetName=UART_2_TX Pin=U5-46
+Added Net: Name=UART_2_TX
+Added Member To Class: ClassName=Inverter Main Member=Component J? JST_PH_B3B
+Added Member To Class: ClassName=Inverter Main Member=Component J? JST_PH_B3B
+Added Member To Class: ClassName=Inverter Main Member=Component J? JST_PH_B3B

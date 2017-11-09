@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Inverter.PrjPcb]
+   Generated File[InverterPCB.TXT]
+   Generated File[InverterPCB.LDP]
+   Generated File[InverterPCB.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 2:05:05 AM On 11/4/2017

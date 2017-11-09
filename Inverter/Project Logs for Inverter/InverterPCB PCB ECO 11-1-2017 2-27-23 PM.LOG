@@ -1,0 +1,11 @@
+Change Component Footprint: Designator=S1 Old Footprint=SW_B3F-4050 New Footprint=TACT_6mmx6mm
+Change Component Comment : Designator=S1 Old Comment=B3F-4050 New Comment=FSM4JSMA
+Change component parameters: Designator = "S1"; Footprint = "TACT_6mmx6mm"; UniqueID = "\HSOXFMIL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Function"; Value = "On/Off"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Bond-Tact"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "TS-1143S-WP-200"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "6.5x6.5mm; 4.3mm stem"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SCDType"; Value = "spec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "450-1129-ND"; VariantName = "[No Variations]"

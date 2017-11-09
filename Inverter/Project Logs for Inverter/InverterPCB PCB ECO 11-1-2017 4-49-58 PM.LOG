@@ -1,0 +1,50 @@
+Removed Pin From Net: NetName=BUT4 Pin=U5-31
+Change Component Designator: OldDesignator=J? NewDesignator=J1
+Change Component Designator: OldDesignator=J? NewDesignator=J2
+Change Component Designator: OldDesignator=J? NewDesignator=J3
+Added Component: Designator=R6(RESC1608X55N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RC0603FR-074K7L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ratings"; Value = "1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCDType"; Value = "undef"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "311-4.70KHRCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4K7"; VariantName = "[No Variations]"
+Added Component: Designator=R8(RESC1608X55N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RC0603FR-074K7L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ratings"; Value = "1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCDType"; Value = "undef"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "311-4.70KHRCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4K7"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=UART_1_TX Pin=J2-3
+Added Pin To Net: NetName=GND Pin=J3-1
+Added Pin To Net: NetName=UART_2_RX Pin=J3-2
+Added Pin To Net: NetName=UART_2_TX Pin=J3-3
+Added Pin To Net: NetName=3.3V Pin=R6-1
+Added Pin To Net: NetName=3.3V Pin=R8-1
+Added Pin To Net: NetName=BUT4 Pin=U5-30
+Added Pin To Net: NetName=SCL Pin=J1-3
+Added Pin To Net: NetName=SCL Pin=R8-2
+Added Pin To Net: NetName=SCL Pin=U5-32
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=J1-2
+Added Pin To Net: NetName=SDA Pin=R6-2
+Added Pin To Net: NetName=SDA Pin=U5-31
+Added Net: Name=SDA
+Added Pin To Net: NetName=UART_1_RX Pin=J2-2
+Added Pin To Net: NetName=UART_1_RX Pin=U5-59
+Added Net: Name=UART_1_RX
+Added Member To Class: ClassName=Inverter Main Member=Component J1 JST_PH_B3B
+Added Member To Class: ClassName=Inverter Main Member=Component J2 JST_PH_B3B
+Added Member To Class: ClassName=Inverter Main Member=Component R6 Thick Film
+Added Member To Class: ClassName=Inverter Main Member=Component R8 Thick Film

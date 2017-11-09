@@ -1,0 +1,9 @@
+DRC Rules Export File for PCB: C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Inverter\InverterPCB.PcbDoc
+RuleKind=Clearance|RuleName=Clearance_BOOT_S|Scope=Board|Minimum=12.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=4.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=6.00
+RuleKind=Clearance|RuleName=Clearance_All|Scope=Board|Minimum=6.00
+RuleKind=Clearance|RuleName=Clearance_350V|Scope=Board|Minimum=12.00
+RuleKind=Clearance|RuleName=Stitching 350V|Scope=Board|Minimum=5.00

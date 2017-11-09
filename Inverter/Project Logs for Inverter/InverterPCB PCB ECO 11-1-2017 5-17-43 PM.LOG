@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GND Pin=C2B9-2
+Removed Pin From Net: NetName=GND Pin=Q5B9-2
+Removed Pin From Net: NetName=3.3V Pin=R2B9-1
+Removed Pin From Net: NetName=3.3V Pin=R3B9-1
+Removed Pin From Net: NetName=GND Pin=S2B9-1'
+Removed Pin From Net: NetName=GND Pin=S2B9-1
+Change Room Name: Old Name=B9 New Name=BUT
+Change Room Scope: Old Scope=InComponentClass('B9') New Scope=InComponentClass('BUT')
