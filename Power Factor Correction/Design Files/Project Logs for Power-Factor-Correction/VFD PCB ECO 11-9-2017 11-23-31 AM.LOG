@@ -1,0 +1,29 @@
+Added Component: Designator=SNK1(HeatSink ATS-CPX025025010-165-C2-R0)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Attachment Method"; Value = "Clip, Solder Foot"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Fans, Thermal Management"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.wakefield-vette.com/Portals/0/omniKlip/omniKlip%20Wakefield%20Vette%20Data%20Sheet.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.wakefield-vette.com/Portals/0/omniKlip/omniKlip%20Wakefield%20Vette%20Data%20Sheet.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diameter"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height Off Base (Height of Fin)"; Value = "2.480" (62.99mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2.953" (75.00mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wakefield-Vette"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "OMNI-UNI-41-75"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Aluminum"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material Finish"; Value = "Black Anodized"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Cooled"; Value = "TO-247, TO-264"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation @ Temperature Rise"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=13.42, 10=12.671, 25=11.926, 50=11.1808, 100=10.4353, 250=9.68996, 500=9.5036, 1000=9.31725 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Shape"; Value = "Rectangular, Fins"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "791"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "345-1489-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Thermal Resistance @ Forced Air Flow"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Thermal Resistance @ Natural"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Board Level, Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.614" (41.00mm)"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetP1_3 Pin=P1-3
+Added Net: Name=NetP1_3
+Added Member To Class: ClassName=Power Factor Correction Member=Component SNK1 OMNI-UNI-41-75
