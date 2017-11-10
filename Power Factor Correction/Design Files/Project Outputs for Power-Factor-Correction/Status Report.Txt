@@ -1,24 +1,21 @@
-<<<<<<< HEAD
-Output: NC Drill Files
-Type  : NC Drill
-From  : Project [Power-Factor-Correction.PrjPcb]
-   Generated File[VFD.TXT]
-   Generated File[VFD.LDP]
-   Generated File[VFD.DRR]
-
-
-Files Generated   : 3
-Documents Printed : 0
-
-Finished Output Generation At 12:24:51 AM On 8/31/2017
-=======
-Output: Bill of Materials
-Type  : BOM
+Output: Gerber Files
+Type  : Gerber
 From  : Variant [[No Variations]] of Project [Power-Factor-Correction.PrjPcb]
+   Generated File[VFD.GTL]
+   Generated File[VFD.GBL]
+   Generated File[VFD.GTO]
+   Generated File[VFD.GTP]
+   Generated File[VFD.GTS]
+   Generated File[VFD.GBS]
+   Generated File[VFD.GBP]
+   Generated File[VFD.GBO]
+   Generated File[VFD.GM7]
+   Generated File[VFD.RUL]
+   Generated File[VFD.EXTREP]
+   Generated File[VFD.REP]
 
 
-Files Generated   : 0
+Files Generated   : 12
 Documents Printed : 0
 
-Finished Output Generation At 10:09:26 AM On 9/1/2017
->>>>>>> origin/master
+Finished Output Generation At 5:50:49 PM On 11/10/2017

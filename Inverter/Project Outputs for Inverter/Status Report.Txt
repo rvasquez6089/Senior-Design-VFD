@@ -1,9 +1,21 @@
-Output: Bill of Materials
-Type  : BOM
+Output: Gerber Files
+Type  : Gerber
 From  : Variant [[No Variations]] of Project [Inverter.PrjPcb]
+   Generated File[InverterPCB.GTL]
+   Generated File[InverterPCB.GBL]
+   Generated File[InverterPCB.GTO]
+   Generated File[InverterPCB.GTP]
+   Generated File[InverterPCB.GTS]
+   Generated File[InverterPCB.GBS]
+   Generated File[InverterPCB.GBP]
+   Generated File[InverterPCB.GBO]
+   Generated File[InverterPCB.GM7]
+   Generated File[InverterPCB.RUL]
+   Generated File[InverterPCB.EXTREP]
+   Generated File[InverterPCB.REP]
 
 
-Files Generated   : 0
+Files Generated   : 12
 Documents Printed : 0
 
-Finished Output Generation At 10:07:49 AM On 11/10/2017
+Finished Output Generation At 5:46:01 PM On 11/10/2017

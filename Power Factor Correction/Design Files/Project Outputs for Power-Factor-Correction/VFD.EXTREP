@@ -1,9 +1,5 @@
 ------------------------------------------------------------------------------------------
-<<<<<<< HEAD
-Gerber File Extension Report For: VFD.GBR   8/31/2017  12:24:37 AM
-=======
-Gerber File Extension Report For: VFD.GBR   9/1/2017  9:31:32 AM
->>>>>>> origin/master
+Gerber File Extension Report For: VFD.GBR   11/10/2017  5:50:47 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -12,21 +8,6 @@ Layer Extension     Layer Description
 ------------------------------------------------------------------------------------------
 .GTL                Top Layer                               
 .GBL                Bottom Layer                            
-<<<<<<< HEAD
-.GTP                Top Paste                               
-.GTO                Top Overlay                             
-.GTS                Top Solder                              
-.GBS                Bottom Solder                           
-.GBO                Bottom Overlay                          
-.GBP                Bottom Paste                            
-.GKO                Keep-Out Layer                          
-.GM1                Mechanical 1                            
-.GM7                Mechanical 7                            
-.GM13               Mechanical 13                           
-.GM15               Mechanical 15                           
-.GML                Multi-Layer                             
-.1                  Dielectric 1                            
-=======
 .GTO                Top Overlay                             
 .GTP                Top Paste                               
 .GTS                Top Solder                              
@@ -34,5 +15,4 @@ Layer Extension     Layer Description
 .GBP                Bottom Paste                            
 .GBO                Bottom Overlay                          
 .GM7                Mechanical 7                            
->>>>>>> origin/master
 ------------------------------------------------------------------------------------------

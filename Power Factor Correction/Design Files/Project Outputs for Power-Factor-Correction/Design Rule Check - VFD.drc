@@ -1,21 +1,9 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\Tv\Real Documents\Engineering Projects\Senior-Design-VFD\Power Factor Correction\Design Files\VFD.PcbDoc
-Date     : 11/9/2017
-Time     : 11:22:44 PM
+PCB File : C:\Users\Ryan\Real Documents\Engineering Projects\Senior-Design-VFD\Power Factor Correction\Design Files\VFD.PcbDoc
+Date     : 11/10/2017
+Time     : 5:40:34 PM
 
 Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=15mil) (InNetClass('HV')),(All)
-Rule Violations :0
-
-Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
-Rule Violations :0
-
-Processing Rule : Un-Routed Net Constraint ( (All) )
-Rule Violations :0
-
-Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
 Processing Rule : Width Constraint (Min=4mil) (Max=1000mil) (Preferred=10mil) (All)
@@ -24,10 +12,19 @@ Rule Violations :0
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
 Rule Violations :0
 
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
 Processing Rule : Minimum Annular Ring (Minimum=5mil) (All)
 Rule Violations :0
 
 Processing Rule : Hole Size Constraint (Min=8mil) (Max=1000mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (Disabled)(All)
 Rule Violations :0
 
 Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
@@ -45,7 +42,10 @@ Rule Violations :0
 Processing Rule : Net Antennae (Tolerance=0mil) (All)
 Rule Violations :0
 
-Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (Disabled)(All)
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=15mil) (InNetClass('HV')),(All)
 Rule Violations :0
 
 
