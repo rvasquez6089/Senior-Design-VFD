@@ -18,4 +18,8 @@ From  : Variant [[No Variations]] of Project [Inverter.PrjPcb]
 Files Generated   : 12
 Documents Printed : 0
 
+<<<<<<< HEAD
 Finished Output Generation At 5:46:01 PM On 11/10/2017
+=======
+Finished Output Generation At 10:24:33 PM On 11/18/2017
+>>>>>>> origin/master
